@@ -20,7 +20,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/musicplayer.git
+git clone https://github.com/swetha-sundarams/Swetha-S_5057_LICET
 cd musicplayer
 Install Python dependencies:
 
@@ -46,7 +46,7 @@ Run the development server:
 Copy code
 python manage.py runserver
 Usage
-Visit the application in your web browser at http://localhost:8000.
+Visit the application in your web browser at http://localhost:3306.
 Register for a new account or log in if you already have one.
 Upload your music files or explore existing ones.
 Create playlists and add songs to them.
