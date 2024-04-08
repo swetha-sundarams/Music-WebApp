@@ -1,0 +1,34 @@
+{% extends 'images/layouts/main.html' %}
+<!DOCTYPE html>
+<body>
+
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+{% include 'images/inc/slider.html' %}
+
+<div class="container" style="margin-top: 70px;">
+<div class="row">
+    <div class="col-12"><h4 class="mb-3">BEST SONGS</h4> 
+        <hr style="border-color: #000000;"></div>
+    {% for item in song %}
+    <div class="col-md-4 col-lg-3"> 
+    <div class="card my-3">
+    <img src="{{item.song_image.url}}" class="card-image-top" alt="{{item.song_image}}"> 
+    <a href="{% url 'Category_select' item.category_name item.name %}">
+    <div class="card-body">
+    <h5 class="card-title text-primary">{{ item.name}}</h5>
+    <p class="card-text">{{item.description}}</p> 
+    
+    </div>
+    </a></div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+
+{%endblock content %}
+</body>
+</html>

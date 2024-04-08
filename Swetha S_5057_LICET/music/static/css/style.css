@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html{
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+}
+.carousel-item img{
+    object-fit: cover;
+    object-position: top;
+    height: 90vh;
+    overflow:hidden
+}
+footer{
+    background-color: black;
+}
